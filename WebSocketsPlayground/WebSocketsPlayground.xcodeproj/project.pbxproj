@@ -14,6 +14,9 @@
 		6264CC0229FAB3A300166EAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6264CC0129FAB3A300166EAC /* Assets.xcassets */; };
 		6264CC0529FAB3A300166EAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6264CC0329FAB3A300166EAC /* LaunchScreen.storyboard */; };
 		6264CC1029FAB3A400166EAC /* WebSocketsPlaygroundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6264CC0F29FAB3A400166EAC /* WebSocketsPlaygroundTests.swift */; };
+		6264CC2929FAB4DD00166EAC /* WebSocketClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6264CC2829FAB4DD00166EAC /* WebSocketClient.swift */; };
+		6264CC2B29FAB50F00166EAC /* WebSocketConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6264CC2A29FAB50F00166EAC /* WebSocketConnection.swift */; };
+		6264CC2D29FAB59F00166EAC /* URLSessionWebSocketClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6264CC2C29FAB59F00166EAC /* URLSessionWebSocketClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +40,9 @@
 		6264CC0629FAB3A300166EAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6264CC0B29FAB3A400166EAC /* WebSocketsPlaygroundTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebSocketsPlaygroundTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6264CC0F29FAB3A400166EAC /* WebSocketsPlaygroundTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketsPlaygroundTests.swift; sourceTree = "<group>"; };
+		6264CC2829FAB4DD00166EAC /* WebSocketClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketClient.swift; sourceTree = "<group>"; };
+		6264CC2A29FAB50F00166EAC /* WebSocketConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketConnection.swift; sourceTree = "<group>"; };
+		6264CC2C29FAB59F00166EAC /* URLSessionWebSocketClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionWebSocketClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,13 +84,11 @@
 		6264CBF729FAB3A200166EAC /* WebSocketsPlayground */ = {
 			isa = PBXGroup;
 			children = (
-				6264CBF829FAB3A200166EAC /* AppDelegate.swift */,
-				6264CBFA29FAB3A200166EAC /* SceneDelegate.swift */,
-				6264CBFC29FAB3A200166EAC /* ViewController.swift */,
-				6264CBFE29FAB3A200166EAC /* Main.storyboard */,
-				6264CC0129FAB3A300166EAC /* Assets.xcassets */,
-				6264CC0329FAB3A300166EAC /* LaunchScreen.storyboard */,
 				6264CC0629FAB3A300166EAC /* Info.plist */,
+				6264CC2E29FAB73300166EAC /* Other */,
+				6264CC2829FAB4DD00166EAC /* WebSocketClient.swift */,
+				6264CC2A29FAB50F00166EAC /* WebSocketConnection.swift */,
+				6264CC2C29FAB59F00166EAC /* URLSessionWebSocketClient.swift */,
 			);
 			path = WebSocketsPlayground;
 			sourceTree = "<group>";
@@ -95,6 +99,19 @@
 				6264CC0F29FAB3A400166EAC /* WebSocketsPlaygroundTests.swift */,
 			);
 			path = WebSocketsPlaygroundTests;
+			sourceTree = "<group>";
+		};
+		6264CC2E29FAB73300166EAC /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				6264CBF829FAB3A200166EAC /* AppDelegate.swift */,
+				6264CBFA29FAB3A200166EAC /* SceneDelegate.swift */,
+				6264CBFC29FAB3A200166EAC /* ViewController.swift */,
+				6264CBFE29FAB3A200166EAC /* Main.storyboard */,
+				6264CC0129FAB3A300166EAC /* Assets.xcassets */,
+				6264CC0329FAB3A300166EAC /* LaunchScreen.storyboard */,
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,7 +216,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				6264CBFD29FAB3A200166EAC /* ViewController.swift in Sources */,
+				6264CC2B29FAB50F00166EAC /* WebSocketConnection.swift in Sources */,
 				6264CBF929FAB3A200166EAC /* AppDelegate.swift in Sources */,
+				6264CC2D29FAB59F00166EAC /* URLSessionWebSocketClient.swift in Sources */,
+				6264CC2929FAB4DD00166EAC /* WebSocketClient.swift in Sources */,
 				6264CBFB29FAB3A200166EAC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
